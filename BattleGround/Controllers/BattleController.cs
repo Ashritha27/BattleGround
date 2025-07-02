@@ -7,16 +7,22 @@ namespace BattleGround.Controllers
     [Route("api/[controller]")]
     public class BattleController : ControllerBase
     {
-        private static ConcurrentDictionary<string, int> players = new();
+
+
+        public record PlayerState(string Avatar, int HP);
+
+        private static Dictionary<string, PlayerState> players = new();
+
 
         [HttpGet]
         public IActionResult GetAll() => Ok(players);
 
+
         [HttpPost("add/{name}")]
-        public IActionResult Add(string name)
+        public IActionResult Add(string name, [FromQuery] string avatar = "👾")
         {
             if (!players.ContainsKey(name))
-                players[name] = 100;
+                players[name] = new PlayerState(avatar, 100);
             return Ok(players);
         }
 
@@ -24,7 +30,11 @@ namespace BattleGround.Controllers
         public IActionResult Attack(string name)
         {
             if (players.ContainsKey(name))
-                players[name] = Math.Max(0, players[name] - 10);
+            {
+                var current = players[name];
+                var newHp = Math.Max(0, current.HP - 10);
+                players[name] = current with { HP = newHp };
+            }
             return Ok(players);
         }
 
@@ -32,9 +42,14 @@ namespace BattleGround.Controllers
         public IActionResult Heal(string name)
         {
             if (players.ContainsKey(name))
-                players[name] = Math.Min(100, players[name] + 10);
+            {
+                var current = players[name];
+                var newHp = Math.Min(100, current.HP + 10);
+                players[name] = current with { HP = newHp };
+            }
             return Ok(players);
         }
+
 
         [HttpPost("reset")]
         public IActionResult Reset()
