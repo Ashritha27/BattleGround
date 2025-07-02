@@ -30,3 +30,4 @@ C:\Users\Ashritha.Shetty\source\repos\BattleGround\BattleGround\obj\Debug\net9.0
 C:\Users\Ashritha.Shetty\source\repos\BattleGround\BattleGround\obj\Debug\net9.0\BattleGround.pdb
 C:\Users\Ashritha.Shetty\source\repos\BattleGround\BattleGround\obj\Debug\net9.0\BattleGround.genruntimeconfig.cache
 C:\Users\Ashritha.Shetty\source\repos\BattleGround\BattleGround\obj\Debug\net9.0\ref\BattleGround.dll
+C:\Users\Ashritha.Shetty\source\repos\BattleGround\battleground\obj\Debug\net9.0\BattleGround.sourcelink.json

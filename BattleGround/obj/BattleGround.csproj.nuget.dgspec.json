@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ashritha.Shetty\\source\\repos\\BattleGround\\BattleGround\\BattleGround.csproj": {}
+    "C:\\Users\\Ashritha.Shetty\\source\\repos\\BattleGround\\battleground\\BattleGround.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ashritha.Shetty\\source\\repos\\BattleGround\\BattleGround\\BattleGround.csproj": {
+    "C:\\Users\\Ashritha.Shetty\\source\\repos\\BattleGround\\battleground\\BattleGround.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ashritha.Shetty\\source\\repos\\BattleGround\\BattleGround\\BattleGround.csproj",
+        "projectUniqueName": "C:\\Users\\Ashritha.Shetty\\source\\repos\\BattleGround\\battleground\\BattleGround.csproj",
         "projectName": "BattleGround",
-        "projectPath": "C:\\Users\\Ashritha.Shetty\\source\\repos\\BattleGround\\BattleGround\\BattleGround.csproj",
+        "projectPath": "C:\\Users\\Ashritha.Shetty\\source\\repos\\BattleGround\\battleground\\BattleGround.csproj",
         "packagesPath": "C:\\Users\\Ashritha.Shetty\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ashritha.Shetty\\source\\repos\\BattleGround\\BattleGround\\obj\\",
+        "outputPath": "C:\\Users\\Ashritha.Shetty\\source\\repos\\BattleGround\\battleground\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
